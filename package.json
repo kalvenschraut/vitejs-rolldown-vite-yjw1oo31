@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "pnpm build:package && pnpm dev",
+    "start": "pnpm run build:package && pnpm run dev",
     "dev": "pnpm --filter demo-app dev",
     "build": "pnpm --filter package build && pnpm --filter app build",
     "build:package": "pnpm --filter shared-utils build",
