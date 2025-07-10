@@ -1,0 +1,30 @@
+{
+  "name": "@local/shared-utils",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./dist/shared-utils.js",
+  "types": "./dist/shared-utils.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/shared-utils.d.ts",
+      "import": "./dist/shared-utils.js"
+    },
+    "./worker": {
+      "types": "./dist/worker.d.ts",
+      "import": "./dist/worker.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite build --watch"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^6.0.0",
+    "typescript": "^5.6.3",
+    "vite": "npm:rolldown-vite@7.0.5",
+    "vue": "^3.5.17"
+  }
+}
